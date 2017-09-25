@@ -1,15 +1,20 @@
 import { Injectable } from '@angular/core';
 import { ProductDetails } from '../product/models/product-detail';
-import { Http } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+
+import {PRODUCTDETAILS} from './json/productDetails'
 import 'rxjs/add/operator/map';
+import { AngularFireDatabase, FirebaseListObservable, } from 'angularfire2/database';
 @Injectable()
 export class ProductService {
-  productDetails:ProductDetails;
-  constructor(private http:Http) { }
-  getProduct(id:number) : Observable<ProductDetails[]>{
-     
-    return this.http.get('./json/productDetails.json').map(res =>this.productDetails=res.json());
+  productDetails:FirebaseListObservable<ProductDetails[]>;
+  constructor(private db: AngularFireDatabase) { }
+  getProductById(id:number) {
+     this.productDetails
+    
   }
+  getProduct() {
+    this.productDetails=this.db.list('https://fir-8d8ad.firebaseio.com/productDetaiss') as FirebaseListObservable<ProductDetails[]>
+    return this.productDetails;
+ }
   
 }

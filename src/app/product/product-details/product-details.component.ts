@@ -32,7 +32,7 @@ export class ProductDetailsComponent implements OnInit {
     //   }
     // )
 
-    console.log("hahaha",this.productService.getProduct(this.productIndex).subscribe(app=>console.log("2344",app)));
+    // conssole.log("hahaha",this.productService.getProduct(this.productIndex).subscribe(app=>console.log("2344",app)));
   }
   ngOnDestroy(){
     this.subscription.unsubscribe();

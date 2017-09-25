@@ -1,4 +1,8 @@
-{"something":[{
+import { ProductDetails } from '../models/product-detail'
+
+
+export const PRODUCTDETAILS:ProductDetails[]=
+[{
     "id":1,
     "name":"Hello",
     "description":"Something about Hello"
@@ -22,4 +26,4 @@
     "id":5,
     "name":"Hello3",
     "description":"Something about Hello3"
-}]}
+}]
