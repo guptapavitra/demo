@@ -14,8 +14,7 @@ export class ProducBoxComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.productService.getProduct().subscribe((app)=>{console.log("helloooo",app)});
-    this.productDetails.description
+    console.log("hello",this.productDetails)
   }
 
 
