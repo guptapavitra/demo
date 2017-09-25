@@ -20,15 +20,15 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
-import { ProducBoxComponent } from './product/produc-box/produc-box.component';
-import { ProductListComponent } from './product/produc-box/product-list/product-list.component'
+import { ProductBoxComponent } from './product/product-box/product-box.component';
+import { ProductListComponent } from './product/product-box/product-list/product-list.component'
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ProductDetailsComponent,
     PageNotFoundComponentComponent,
-    ProducBoxComponent,
+    ProductBoxComponent,
     ProductListComponent
   ],
   imports: [

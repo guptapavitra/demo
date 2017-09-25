@@ -3,10 +3,10 @@ import { ProductService } from '../product.service';
 import { ProductDetails } from '../models/product-detail'
 @Component({
   selector: 'app-produc-box',
-  templateUrl: './produc-box.component.html',
-  styleUrls: ['./produc-box.component.css']
+  templateUrl: './product-box.component.html',
+  styleUrls: ['./product-box.component.css']
 })
-export class ProducBoxComponent implements OnInit {
+export class ProductBoxComponent implements OnInit {
   @Input() productDetails:ProductDetails;
   
   constructor(private productService:ProductService) { 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProductDetails } from '../product/models/product-detail';
 
-import {PRODUCTDETAILS} from './json/productDetails'
+
 import 'rxjs/add/operator/map';
 import { AngularFireDatabase, FirebaseListObservable, } from 'angularfire2/database';
 @Injectable()
