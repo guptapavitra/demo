@@ -13,10 +13,9 @@ import { product_routes } from './product/product.routes';
 // import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 
 const appRoutes: Routes = [
-    { path: '',   redirectTo: '/Home', pathMatch: 'full' },
-    { path :'Home', component:AppComponent},
-    { path :'product', component:ProductListComponent},
-    { path :'product', component:ProductListComponent ,children:product_routes},
+    { path: '',   redirectTo: '/home', pathMatch: 'full' },
+    { path :'home', loadChildren: 'app/home/home.module#HomeModule'},
+    { path :'products', loadChildren: 'app/products/products.module#ProductsModule'},
     { path: '**', component: PageNotFoundComponentComponent }
 ];
 

@@ -1,0 +1,27 @@
+.header-top-wrapper {
+    height: 30px;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pull-right ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    color: #777;
+    font-size: 12px;
+}
+
+.pull-right ul li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid #eee;
+}
+
+.pull-right ul li:first-child {
+    border-left: none;
+}
