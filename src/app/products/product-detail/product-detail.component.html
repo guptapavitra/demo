@@ -1,3 +1,54 @@
-<p>
-  product-detail works!
-</p>
+<!-- <carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
+  <slide *ngFor="let slide of slides; let index=index">
+    <img src="http://logoinspirations.com/wp-content/uploads/2016/05/Awesome-plant-Nature-Facebook-Cover.jpg" alt="Second slide">
+ 
+    <div class="carousel-caption">
+      <h4>Slide {{index}}</h4>
+      <p>{{slide.text}}</p>
+    </div>
+  </slide>
+</carousel>
+<h2>carasouel is working</h2> -->
+<div class="row">
+  <div class="col-xs-1">
+  </div>
+  <div class="col-xs-5">
+    <carousel>
+      <slide>
+        <img src="http://logoinspirations.com/wp-content/uploads/2016/05/Awesome-plant-Nature-Facebook-Cover.jpg" alt="Second slide">
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </slide>
+      <slide>
+        <img src="http://logoinspirations.com/wp-content/uploads/2016/05/Awesome-plant-Nature-Facebook-Cover.jpg" alt="Second slide">
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </slide>
+      <slide>
+        <img src="http://logoinspirations.com/wp-content/uploads/2016/05/Awesome-plant-Nature-Facebook-Cover.jpg" alt="Second slide">
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <div class="col-xs-5">
+    <div class="pull-right">
+      <div>
+        <h1>The Woods - All in One</h1>
+      </div>
+    </div>
+    <div class="product-shop">
+      <p class="top_description">The all-in-one care set containing Eau de Parfum, Body Wash &amp; Hand Soap.</p>
+      <div class="base-info">
+            Volume: 50ML (The Woods) + 250ML (Body Wash) + 125G (Bar of Soap) - Base:
+      </div>
+      <button type="button" class="btn btn-warning" >Send Enquiry</button>
+    </div>
+  </div>
+</div>

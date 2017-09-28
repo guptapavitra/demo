@@ -33,5 +33,8 @@ export class ProductDetailComponent implements OnInit {
 
     // conssole.log("hahaha",this.productService.getProduct(this.productIndex).subscribe(app=>console.log("2344",app)));
   }
-
+  public myInterval: number = 1500;
+  public slides: any[] = [];
+  public activeSlideIndex: number = 0;
+  public noWrapSlides:boolean = false;
 }
