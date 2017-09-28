@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import  { Subscription } from 'rxjs/Subscription';
+import { ActivatedRoute } from '@angular/router';
 
+import { Observable } from 'rxjs/Observable';
+import { ProductDetails } from '../models/product-detail';
+import { ProductService } from '../services/product.service'
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
@@ -7,9 +12,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+
+  selectedProduct:Observable<ProductDetails>;
+  private subscription :Subscription;
+  private productIndex : number;
+  constructor(
+    private activateR:ActivatedRoute,
+    private productService:ProductService
+  ) {
+    
+  }
 
   ngOnInit() {
+    this.subscription=this.activateR.params.subscribe(
+      (params:any)=>{
+        this.productIndex=params['id'];
+        // console.log(this.productService.getProduct(this.productIndex));
+      }
+    )
+
+    // conssole.log("hahaha",this.productService.getProduct(this.productIndex).subscribe(app=>console.log("2344",app)));
   }
 
 }

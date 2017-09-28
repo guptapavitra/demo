@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProductDetails } from '../product/models/product-detail';
+import { ProductDetails } from '../models/product-detail';
 
 
 import 'rxjs/add/operator/map';

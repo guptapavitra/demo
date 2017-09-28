@@ -3,14 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProductImpressionsComponent } from "./product-impressions/product-impressions.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
-
-const homeRoutes: Routes = [
-    { path: '', component: ProductImpressionsComponent },
-    { path: ':productName', component: ProductDetailComponent }
+import { ProductBoxComponent } from './product-box/product-box.component';
+import { ProductComponent } from './product.component';
+import { ProductListComponent } from './product-box/product-list/product-list.component'
+const productRoutes: Routes = [
+    { path: '', component: ProductComponent },
+    {path:'box',component: ProductListComponent},
+    { path: 'productName', component: ProductDetailComponent }
+    
+   
 ];
 
 @NgModule({
-  imports: [ RouterModule.forChild(homeRoutes) ],
+  imports: [ RouterModule.forChild(productRoutes) ],
   exports: [ RouterModule ],
   providers: [ ]
 })

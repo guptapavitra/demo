@@ -17,26 +17,19 @@ import { RouterModule } from '@angular/router';
 
 //importing the Services
 
-import { ProductService } from './product/product.service'
 
 //components
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { ProductDetailsComponent } from './product/product-details/product-details.component';
+
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
-import { ProductBoxComponent } from './product/product-box/product-box.component';
-import { ProductListComponent } from './product/product-box/product-list/product-list.component';
+
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { HeaderBottomComponent } from './header-bottom/header-bottom.component';
 import { FooterComponent } from './footer/footer.component'
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    ProductDetailsComponent,
     PageNotFoundComponentComponent,
-    ProductBoxComponent,
-    ProductListComponent,
     HeaderTopComponent,
     HeaderBottomComponent,
     FooterComponent
@@ -50,7 +43,7 @@ import { FooterComponent } from './footer/footer.component'
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [ProductService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

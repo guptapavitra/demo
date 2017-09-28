@@ -3,12 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 //components
-import { ProductComponent } from './product/product.component';
-import { ProductListComponent } from './product/product-box/product-list/product-list.component'
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 import { AppComponent } from './app.component'
 //importing the Child Routes
-import { product_routes } from './product/product.routes';
+
 
 // import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 

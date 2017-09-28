@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { ProductService } from '../product.service';
+import { ProductService } from '../services/product.service';
 import { ProductDetails } from '../models/product-detail'
 @Component({
   selector: 'app-produc-box',
@@ -14,7 +14,7 @@ export class ProductBoxComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("hello",this.productDetails)
+  
   }
 
 
