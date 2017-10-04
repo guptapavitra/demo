@@ -26,13 +26,19 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { HeaderBottomComponent } from './header-bottom/header-bottom.component';
 import { FooterComponent } from './footer/footer.component'
+
+//services
+import { WindowService } from "./services/window.service";
+import { HeaderProductsCardComponent } from './header-bottom/header-products-card/header-products-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponentComponent,
     HeaderTopComponent,
     HeaderBottomComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderProductsCardComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,7 @@ import { FooterComponent } from './footer/footer.component'
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [],
+  providers: [WindowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,3 +2,80 @@
     height: 68px;
     border-bottom: 1px solid #eee;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    height: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    color: #777;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+ul li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #6daf29;
+}
+
+input[type='text'] {
+    outline: none;
+    right: 0;
+    height: auto;
+    padding: 6px 30px 6px 8px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    width: 0;
+}
+
+.expand input[type='text'] {
+    opacity: 1;
+    width: 200px;
+}
+
+li.search-box {
+    position: relative;
+}
+
+li .fa.fa-search {
+    position: absolute;
+    top: 0;
+    right: 14px;
+}
+
+.fa-caret-down:before {
+    content: "\f0d7";
+    margin-left: 6px;
+}
+
+li.products {
+    position: relative;
+}
+
+app-header-products-card {
+    top: 44px;
+    left: 0;
+}
