@@ -1,7 +1,7 @@
 .footer-wrapper {
     border-top: 1px solid #eee;
     background-color: #333;
-    color: white;
+    color: #c6c7cb;
     /* To be removed after implementation of footer content */
     height: 200px;
 }
