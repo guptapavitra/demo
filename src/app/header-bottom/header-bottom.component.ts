@@ -4,6 +4,7 @@ import { Router } from "@angular/router";
 import { WindowService } from "../services/window.service";
 
 import { HeaderProductsCardComponent } from './header-products-card/header-products-card.component';
+import * as $ from 'jquery'; 
 
 @Component({
   selector: 'app-header-bottom',
@@ -12,13 +13,14 @@ import { HeaderProductsCardComponent } from './header-products-card/header-produ
 })
 export class HeaderBottomComponent implements OnInit {
   @ViewChild('sb') searchBox:ElementRef;
-  @ViewChild('pc', {read: ElementRef}) productCardE:ElementRef;
+  @ViewChild('pc', { read: ElementRef }) productCardE:ElementRef;
   @ViewChild('pc') productCard:HeaderProductsCardComponent;
   @ViewChild('msm') mobileSideMenu:ElementRef;
   
   constructor(private window:WindowService, private router:Router) { }
 
   ngOnInit() {
+    // this.onSwipeHandlers();
     this.router.events.subscribe((routerEvent) => {
       this.hideProductsCard();
     });
@@ -86,4 +88,13 @@ export class HeaderBottomComponent implements OnInit {
       this.mobileSideMenu.nativeElement.classList.add('open');
     }
   }
+
+  // onSwipeHandlers() {
+  //   $(document.body).on("swipeleft", function() {
+  //     console.log("Swipe Happening!");
+  //   });
+  //   $(document.body).on("swipe", function() {
+  //     window.location.href = "http://bollymeaning.com"
+  //   });
+  // }
 }
