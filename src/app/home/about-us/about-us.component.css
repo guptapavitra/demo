@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    background: #fbfbfb;
+}
+
+.section-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px; /* Because there is no section header */
+}
+
+.dt-left {
+    padding: 25px;
+}
+
+.dt-right {
+    width: 100vw;
+}
+
+.dt-right img {
+    width: 100%;
+}
+
+.dt-left .large-font {
+    font-size: 24px;
+    color: #6dae2a;
+    text-transform: uppercase;
+}
+
+.dt-left .small-font {
+    color: #777;
+}
