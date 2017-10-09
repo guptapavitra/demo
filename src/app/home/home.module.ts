@@ -10,12 +10,13 @@ import { HomeBox3Component } from './home-box-3/home-box-3.component';
 import { HomeRoutingModule } from './home.router';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ClientListComponent } from './client-list/client-list.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   imports: [
     CommonModule, HomeRoutingModule, CarouselModule
   ],
-  declarations: [HomeRootComponent, CarouselComponent, HomeBox1Component, HomeBox2Component, HomeBox3Component, ClientListComponent],
+  declarations: [HomeRootComponent, CarouselComponent, HomeBox1Component, HomeBox2Component, HomeBox3Component, ClientListComponent, ContactUsComponent],
 
 })
 export class HomeModule { }
