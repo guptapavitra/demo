@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { Router } from '@angular/router'
 import { ProductService } from '../services/product.service';
 import { ProductDetails } from '../models/product-detail'
 @Component({
@@ -8,14 +9,18 @@ import { ProductDetails } from '../models/product-detail'
 })
 export class ProductBoxComponent implements OnInit {
   @Input() productDetails:ProductDetails;
-  
-  constructor(private productService:ProductService) { 
+  tog:boolean=false;
+  constructor(private productService:ProductService,
+              private router: Router) { 
     
   }
 
   ngOnInit() {
   
   }
-
+  toggle(product:ProductDetails){
+    
+    this.router.navigate(['products/productName', product.id]);
+  }
 
 }

@@ -1,9 +1,7 @@
-<div class="item-wrapper col-md-4" [routerLink]="['/product/details']">
+<div class="item-wrapper col-md-4" (click)="toggle(productDetails)">
   <div class="hover-image">
     <img height="220px" src={{productDetails.img}} alt="Big Beard Bag">
   </div>
   <h2 class="product-name">{{productDetails.name}}</h2>
   <p class="short-description">{{productDetails.description}}</p>
 </div>
-
-  

@@ -13,8 +13,8 @@ export class ProductService {
     
   }
   getProduct() {
-    this.productDetails=this.db.list('https://fir-8d8ad.firebaseio.com/productDetaiss') as FirebaseListObservable<ProductDetails[]>
-    return this.productDetails;
+    
+    return this.db.list('https://fir-8d8ad.firebaseio.com/productDetails') as FirebaseListObservable<ProductDetails[]>;
  }
   
 }

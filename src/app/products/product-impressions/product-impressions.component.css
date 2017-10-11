@@ -1,0 +1,8 @@
+.resize{
+    width: 843px;
+    height: 215px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}

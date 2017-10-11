@@ -13,20 +13,33 @@ import { HomeRoutingModule } from "./products.router";
 import { ProductListComponent } from './product-box/product-list/product-list.component'
 import { ProductComponent } from './product.component';
 
+import { MdDialogModule, MdButton } from '@angular/material';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+//importing the slim load bar
+import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
+
+
 @NgModule({
   imports: [
     CommonModule, 
     HomeRoutingModule,
     FormsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    MdDialogModule,
+    SlimLoadingBarModule.forRoot()
   ],
-  declarations: [ ProductImpressionsComponent, 
+  declarations: [  ProductImpressionsComponent,
                   ProductDetailComponent,
                   ProductBoxComponent,
                   ProductListComponent,
                   ProductComponent],
-  providers:[ProductService]
+  exports:[ProductListComponent,
+    ProductImpressionsComponent,
+    SlimLoadingBarModule],
+    entryComponents: [ProductImpressionsComponent],
+  providers:[ProductService],
+  
 })
 export class ProductsModule { }
