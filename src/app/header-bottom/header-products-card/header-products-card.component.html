@@ -1,0 +1,9 @@
+<div class="card">
+  <input type="text" placeholder="Search Products" class="form-control searchbox" #sb>
+  <ul *ngFor="let category of categoryViseProducts">
+    <li class="category">{{category.category}}</li>
+    <li *ngFor="let product of category.products">
+      <a [routerLink]="product.navigateTo">{{product.product}}</a>
+    </li>
+  </ul>
+</div>

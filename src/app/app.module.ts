@@ -32,9 +32,14 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
 
 import { HeaderTopComponent } from './header-top/header-top.component';
 import { HeaderBottomComponent } from './header-bottom/header-bottom.component';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 
 //importing for the entry componets from product '
+import { FooterComponent } from './footer/footer.component'
+
+//services
+import { WindowService } from "./services/window.service";
+import { HeaderProductsCardComponent } from './header-bottom/header-products-card/header-products-card.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +50,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
     // ProductImpressionsComponent
 
+    HeaderProductsCardComponent
   ],
   imports: [
     BrowserModule,
@@ -63,8 +69,9 @@ import { FooterComponent } from './footer/footer.component';
             CdkTableModule,
             MdButtonModule,
             SlimLoadingBarModule],
-  providers: [],
+  // providers: [],
   
+  providers: [WindowService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

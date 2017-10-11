@@ -1,7 +1,8 @@
 .header-top-wrapper {
     height: 30px;
     border-bottom: 1px solid #eee;
-    color: #777;
+    color: #eeeeee;
+    background: #6daf29;
     font-size: 12px;
     display: flex;
     flex-direction: row;
@@ -11,8 +12,8 @@
 .pull-right ul {
     list-style-type: none;
     margin-bottom: 0;
-    color: #777;
     font-size: 12px;
+    padding: 0;
 }
 
 .pull-right ul li {

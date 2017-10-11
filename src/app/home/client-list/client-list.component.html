@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="section-heading">Clients</div>
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3" *ngFor="let client of clients">
+      <img class="client-logo" [src]="client.logo" [alt]="client.name">
+    </div>
+  </div>
+</div>

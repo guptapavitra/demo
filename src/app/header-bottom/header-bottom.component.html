@@ -1,5 +1,21 @@
 <div class="header-bottom-wrapper">
-  <div class="container-fluid">
-    
+  <div class="container">
+    <img src="http://pimg.tradeindia.com/51432/7/template_photo_1.jpg" alt="saaskin logo" class="logo">
+    <i class="fa fa-bars" aria-hidden="true" (click)="mobileOpenMenu($event)"></i>
+    <ul class="nm-pull-right" #msm>
+      <li class="mobile-search-products-list-item"><input type="text" class="form-control mobile-search-products" placeholder="Search Products"></li>
+      <li class="home-icon-list-item"><i class="fa fa-home" aria-hidden="true"></i></li>
+      <li>Company Profile</li>
+      <li class="products-dropdown">
+        <div class="products" (click)="onClickOurProductsButton($event)">
+          <span>Our Products</span><i class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
+        <app-header-products-card class="products-card" #pc></app-header-products-card>
+      </li>
+      <li class="search-box" #sb>
+        <input type="text">
+        <i class="fa fa-search" aria-hidden="true" (click)="toggleSearchBox($event)"></i>
+      </li>
+    </ul>
   </div>
 </div>
